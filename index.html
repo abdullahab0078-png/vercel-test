@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - All PDF Tools in One Place</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>PDF Tools</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#tools">All Tools</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><button class="btn-login">Login</button></li>
+                <li><button class="btn-signup">Sign Up</button></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Every tool you need to work with PDFs in one place</h1>
+            <p class="hero-subtitle">Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</p>
+        </div>
+    </section>
+
+    <!-- Tool Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="organize">Organize PDF</button>
+                <button class="filter-btn" data-category="optimize">Optimize PDF</button>
+                <button class="filter-btn" data-category="convert">Convert PDF</button>
+                <button class="filter-btn" data-category="edit">Edit PDF</button>
+                <button class="filter-btn" data-category="security">PDF Security</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <div class="tools-grid">
+                <!-- Organize PDF Tools -->
+                <div class="tool-card" data-category="organize">
+                    <div class="tool-icon">📄</div>
+                    <h3>Merge PDF</h3>
+                    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+                    <button class="tool-btn" data-tool="merge">Select PDF files</button>
+                </div>
+
+                <div class="tool-card" data-category="organize">
+                    <div class="tool-icon">✂️</div>
+                    <h3>Split PDF</h3>
+                    <p>Separate one page or a whole set for easy conversion into independent PDF files.</p>
+                    <button class="tool-btn" data-tool="split">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="organize">
+                    <div class="tool-icon">📑</div>
+                    <h3>Organize PDF</h3>
+                    <p>Sort pages of your PDF file however you like. Delete or add PDF pages.</p>
+                    <button class="tool-btn" data-tool="organize">Select PDF file</button>
+                </div>
+
+                <!-- Optimize PDF Tools -->
+                <div class="tool-card" data-category="optimize">
+                    <div class="tool-icon">🗜️</div>
+                    <h3>Compress PDF</h3>
+                    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+                    <button class="tool-btn" data-tool="compress">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="optimize">
+                    <div class="tool-icon">🔧</div>
+                    <h3>Repair PDF</h3>
+                    <p>Repair a damaged PDF and recover data from corrupt PDF files.</p>
+                    <button class="tool-btn" data-tool="repair">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="optimize">
+                    <div class="tool-icon">👁️</div>
+                    <h3>OCR PDF</h3>
+                    <p>Easily convert scanned PDF into searchable and selectable documents.</p>
+                    <button class="tool-btn" data-tool="ocr">Select PDF file</button>
+                </div>
+
+                <!-- Convert PDF Tools -->
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📝</div>
+                    <h3>PDF to Word</h3>
+                    <p>Easily convert your PDF files into easy to edit DOC and DOCX documents.</p>
+                    <button class="tool-btn" data-tool="pdf-to-word">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📊</div>
+                    <h3>PDF to PowerPoint</h3>
+                    <p>Turn your PDF files into easy to edit PPT and PPTX slideshows.</p>
+                    <button class="tool-btn" data-tool="pdf-to-ppt">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📈</div>
+                    <h3>PDF to Excel</h3>
+                    <p>Pull data straight from PDFs into Excel spreadsheets in a few short seconds.</p>
+                    <button class="tool-btn" data-tool="pdf-to-excel">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>PDF to JPG</h3>
+                    <p>Convert each PDF page into a JPG or extract all images contained in a PDF.</p>
+                    <button class="tool-btn" data-tool="pdf-to-jpg">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📄</div>
+                    <h3>Word to PDF</h3>
+                    <p>Make DOC and DOCX files easy to read by converting them to PDF.</p>
+                    <button class="tool-btn" data-tool="word-to-pdf">Select Word file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📄</div>
+                    <h3>PowerPoint to PDF</h3>
+                    <p>Make PPT and PPTX slideshows easy to view by converting them to PDF.</p>
+                    <button class="tool-btn" data-tool="ppt-to-pdf">Select PowerPoint file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">📄</div>
+                    <h3>Excel to PDF</h3>
+                    <p>Make EXCEL spreadsheets easy to read by converting them to PDF.</p>
+                    <button class="tool-btn" data-tool="excel-to-pdf">Select Excel file</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>JPG to PDF</h3>
+                    <p>Convert JPG images to PDF in seconds. Easily adjust orientation and margins.</p>
+                    <button class="tool-btn" data-tool="jpg-to-pdf">Select JPG files</button>
+                </div>
+
+                <div class="tool-card" data-category="convert">
+                    <div class="tool-icon">🌐</div>
+                    <h3>HTML to PDF</h3>
+                    <p>Convert webpages in HTML to PDF. Copy and paste the URL and convert it to PDF.</p>
+                    <button class="tool-btn" data-tool="html-to-pdf">Enter URL</button>
+                </div>
+
+                <!-- Edit PDF Tools -->
+                <div class="tool-card" data-category="edit">
+                    <div class="tool-icon">✏️</div>
+                    <h3>Edit PDF</h3>
+                    <p>Add text, images, shapes or freehand annotations to a PDF document.</p>
+                    <button class="tool-btn" data-tool="edit">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="edit">
+                    <div class="tool-icon">🔄</div>
+                    <h3>Rotate PDF</h3>
+                    <p>Rotate your PDFs the way you need them. You can even rotate multiple PDFs at once!</p>
+                    <button class="tool-btn" data-tool="rotate">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="edit">
+                    <div class="tool-icon">💧</div>
+                    <h3>Watermark</h3>
+                    <p>Stamp an image or text over your PDF in seconds. Choose typography, transparency and position.</p>
+                    <button class="tool-btn" data-tool="watermark">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="edit">
+                    <div class="tool-icon">🔢</div>
+                    <h3>Page Numbers</h3>
+                    <p>Add page numbers into PDFs with ease. Choose your positions, dimensions, typography.</p>
+                    <button class="tool-btn" data-tool="page-numbers">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="edit">
+                    <div class="tool-icon">✂️</div>
+                    <h3>Crop PDF</h3>
+                    <p>Crop margins of PDF documents or select specific areas, then apply changes to one page or whole document.</p>
+                    <button class="tool-btn" data-tool="crop">Select PDF file</button>
+                </div>
+
+                <!-- PDF Security Tools -->
+                <div class="tool-card" data-category="security">
+                    <div class="tool-icon">🔓</div>
+                    <h3>Unlock PDF</h3>
+                    <p>Remove PDF password security, giving you the freedom to use your PDFs as you want.</p>
+                    <button class="tool-btn" data-tool="unlock">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="security">
+                    <div class="tool-icon">🔒</div>
+                    <h3>Protect PDF</h3>
+                    <p>Protect PDF files with a password. Encrypt PDF documents to prevent unauthorized access.</p>
+                    <button class="tool-btn" data-tool="protect">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="security">
+                    <div class="tool-icon">✍️</div>
+                    <h3>Sign PDF</h3>
+                    <p>Sign yourself or request electronic signatures from others.</p>
+                    <button class="tool-btn" data-tool="sign">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="security">
+                    <div class="tool-icon">🖊️</div>
+                    <h3>Redact PDF</h3>
+                    <p>Redact text and graphics to permanently remove sensitive information from a PDF.</p>
+                    <button class="tool-btn" data-tool="redact">Select PDF file</button>
+                </div>
+
+                <div class="tool-card" data-category="security">
+                    <div class="tool-icon">🔍</div>
+                    <h3>Compare PDF</h3>
+                    <p>Show a side-by-side document comparison and easily spot changes between different file versions.</p>
+                    <button class="tool-btn" data-tool="compare">Select PDF files</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Work your way</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Work offline with Desktop</h3>
+                    <p>Batch edit and manage documents locally, with no internet and no limits.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>On-the-go with Mobile</h3>
+                    <p>Your favorite tools, right in your pocket. Keep working on your projects anytime, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Built for business</h3>
+                    <p>Automate document management, onboard teams easily, and scale with flexible plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="premium" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Get more with Premium</h2>
+            <ul class="premium-list">
+                <li>✓ Get full access to all PDF tools and work offline with Desktop</li>
+                <li>✓ Edit PDFs, get advanced OCR for scanned documents</li>
+                <li>✓ Request secure e-Signatures</li>
+                <li>✓ Connect tools and create custom workflows</li>
+            </ul>
+            <button class="btn-premium">Get Premium</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Desktop App</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PDF Tools - Your PDF Editor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- File Upload Modal -->
+    <div class="modal" id="uploadModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Upload Files</h2>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <p>Drag and drop files here or click to browse</p>
+                <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.jpg,.jpeg,.png">
+                <button class="btn-browse">Browse Files</button>
+            </div>
+            <div class="file-list" id="fileList"></div>
+            <div class="modal-actions">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-process">Process</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
